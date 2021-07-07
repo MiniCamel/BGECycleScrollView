@@ -1,0 +1,23 @@
+PODS:
+  - BGECycleScrollView (1.0.0):
+    - Masonry
+  - Masonry (1.1.0)
+
+DEPENDENCIES:
+  - BGECycleScrollView (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - Masonry
+
+EXTERNAL SOURCES:
+  BGECycleScrollView:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  BGECycleScrollView: 579654d38c86c98fe506940db3ee4baf353ece26
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+
+PODFILE CHECKSUM: 1d89dd18c82675ac7707aff93a8db5c15fbde3b3
+
+COCOAPODS: 1.10.1

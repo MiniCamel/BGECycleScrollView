@@ -1,0 +1,6 @@
+framework module Pods_BGECycleScrollView_Tests {
+  umbrella header "Pods-BGECycleScrollView_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}
