@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name             = 'BGECycleScrollView'
-    s.version          = '1.0.0'
+    s.version          = '1.0.1'
     s.summary          = 'Swift循环滚动视图控件'
     s.description      = <<-DESC
         Swift循环滚动视图控件

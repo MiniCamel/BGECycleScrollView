@@ -116,6 +116,12 @@ public class BGECycleScrollView: UIView {
         super.init(frame: frame)
         
         self.backgroundColor = .clear
+        
+        if #available(iOS 11.0, *) {
+            containerScrollView.contentInsetAdjustmentBehavior = .never
+        } else {
+            // Fallback on earlier versions
+        }
     }
     
     required init?(coder: NSCoder) {
@@ -228,7 +234,7 @@ public class BGECycleScrollView: UIView {
 
 extension BGECycleScrollView: UIScrollViewDelegate {
     public func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        if (scrollView == self.containerScrollView && self.dataCount > 1) {
+        if (scrollView == self.containerScrollView && self.dataCount > 0) {
             let scrollViewWidth = scrollView.contentSize.width / CGFloat(self.dataCount + 2)
             
             //scrollview滚动到view宽度的整数倍的时候，触发下面的操作

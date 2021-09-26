@@ -10,7 +10,7 @@ import UIKit
 import BGECycleScrollView
 
 class ViewController: UIViewController {
-    var viewBackgroundColorArray: [UIColor] = [.yellow, .orange, .purple]
+    var viewBackgroundColorArray: [UIColor] = [.yellow]
     
     lazy var cycleView: BGECycleScrollView = {
         var cycleView = BGECycleScrollView()
@@ -67,6 +67,7 @@ class ViewController: UIViewController {
     }
     
     @objc func reloadData() -> () {
+        self.viewBackgroundColorArray = [.yellow, .green]
         self.cycleView.reloadData()
     }
 }
